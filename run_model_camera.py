@@ -5,7 +5,7 @@ import mediapipe as mp
 from tensorflow.keras import layers, models
 
 # ── Rebuild model & load weights from existing .h5 ────────────────
-
+# I rebuild the model because mediapipe was giving problems with using the model with the .keras or .h5 file
 model = models.Sequential([
     layers.Input(shape=(64, 64, 3)),
     layers.Conv2D(32, (3,3), activation='relu', padding='same'),
@@ -38,6 +38,10 @@ hands      = mp_hands.Hands(
 # ── Webcam loop ────────────────────────────────────────────────────
 cap = cv2.VideoCapture(0)
 print("Press Q to quit")
+
+#Fit to the whole screen
+cv2.namedWindow('Rock Paper Scissors', cv2.WINDOW_NORMAL)
+cv2.setWindowProperty('Rock Paper Scissors', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
 while True:
     ret, frame = cap.read()
