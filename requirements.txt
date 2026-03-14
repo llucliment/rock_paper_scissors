@@ -1,4 +1,15 @@
+# ── Core ML ───────────────────────────────────────────────────────
+tensorflow==2.13.1
+keras-tuner
+
+# ── Dataset ───────────────────────────────────────────────────────
+tensorflow-datasets
+
+# ── Computer Vision ───────────────────────────────────────────────
+opencv-python
+mediapipe==0.10.9
+protobuf==3.20.3
+
+# ── Utilities ─────────────────────────────────────────────────────
 numpy
 matplotlib
-tensorflow 
-opencv-python
