@@ -3,7 +3,7 @@
 A Convolutional Neural Network (CNN) model trained to classify hand gestures for Rock, Paper, Scissors using TensorFlow and MediaPipe for real-time detection via webcam.
 
 ## Demo
-
+![Demo](assets/demo_rps.gif)
 
 See the model in action detecting hand gestures in real-time.
 
