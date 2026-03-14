@@ -38,7 +38,7 @@ The model achieves high accuracy on the test set after training with data augmen
 
 ### Training the Model
 
-Open `rock_paper_scissors_cnn.ipynb` in Jupyter Notebook or Google Colab to train the model. The notebook includes:
+Open `rock_paper_scissors_cnn.ipynb` in Jupyter Notebook or Google Colab to train the model. I have personally used the VS Code extension for Google Colab. This way I was able to use my Code Editor while leveraging Colab free GPUs and TPUs. The notebook includes:
 - Data loading and preprocessing
 - Model architecture with data augmentation layers
 - Training with early stopping
@@ -62,7 +62,7 @@ This will open a fullscreen window showing real-time predictions of Rock, Paper,
 - Architecture: 3 Conv blocks + MaxPool, Dense(128), Dropout(0.6)
 - Validation accuracy: ~95%
 - Optimizer: Adam (lr=0.001)
-- Hyperparameter tuning: Bayesian Optimization via Keras Tuner
+- Hyperparameter tuning: Bayesian Optimization via Keras Tuner. (Optional)
 
 ## License
 
